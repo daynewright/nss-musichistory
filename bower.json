@@ -1,0 +1,20 @@
+{
+  "name": "musichistory",
+  "homepage": "https://github.com/daynewright/musichistory-boilerplate",
+  "authors": [
+    "Dayne Wright <daynewr@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}

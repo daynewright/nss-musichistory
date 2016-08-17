@@ -1,0 +1,26 @@
+[
+  {
+    "artist" : "Guns & Roses",
+    "song"   : "Welcome to the Jungle",
+    "album"  : "Appetite for Destruction"
+
+  },
+  {
+    "artist" : "Alanis Morisette",
+    "song"   : "Ironic",
+    "album"  : "Jagged Little Pill"
+
+  },
+  {
+    "artist" : "SemiSonic",
+    "song"   : "Secret Smile",
+    "album"  : "Feeling Strangly Fine"
+
+  },
+  {
+    "artist" : "City and Colour",
+    "song"   : "Senisable Heart",
+    "album"  : "Bring Me Your Love"
+
+  }
+]

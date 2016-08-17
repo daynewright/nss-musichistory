@@ -1,0 +1,189 @@
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 10px 0;
+  display: inline-block;
+}
+
+span {
+  margin: 0 10px;
+}
+
+span:first-of-type {
+  margin-left: 0;
+}
+
+body {
+  width: 80%;
+  max-width: 900px;
+  margin: 2% auto;
+}
+
+nav {
+  background: #FFB4B0;
+}
+
+nav, section {
+  border: 1px solid black;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  color: #000;
+}
+
+section {
+  min-height: 150px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+li {
+  display: inline;
+}
+
+select {
+  width: 95%;
+  margin-left: 0;
+  max-width: 200px;
+}
+
+input {
+  padding: 3px;
+  border: 2px solid #000;
+  width: 50%;
+}
+
+label {
+  width:100px;
+  clear:left;
+  text-align:left;
+  margin-top: 5px;
+}
+
+input, label {
+  float:left;
+  margin-bottom: 10px;
+}
+
+button, select {
+  background: #e6e6e6;
+  font-weight: 900;
+  border-radius: 5px;
+  border: 2px solid #ebebeb;
+  cursor: pointer;
+  display: inline-block;
+
+}
+
+.song button:hover {
+  background-color: #FFB4B0;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+#more-songs {
+  margin: 0 auto;
+  padding: 5px 10%;
+  display: block;
+}
+
+.main-div {
+  min-height: 70%;
+}
+
+.song button {
+  padding: 5px 5px;
+  margin-left: 20px;
+  font-size: .5em;
+}
+
+#add-music-btn {
+  padding: 5px 35px;
+  margin-top: 10px;
+  margin-left: -134px;
+}
+
+form {
+  max-width: 500px;
+}
+
+.sidebar {
+  color: #000;
+  background: #4DD7FA;
+}
+
+.main {
+  color: #785616;
+  background: #FEFAC0;
+}
+
+.sidebar div, .main div {
+  margin: 10px 25px;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.wrap-space-between {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
+.add-music {
+  justify-content: center;
+}
+
+.music-form {
+  text-align: center;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.music-form label {
+  margin-right: 10px;
+}
+
+.music-form div{
+  width: 50%;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* Large screen modifications */
+@media (min-width: 768px) {
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .sidebar {
+    width: 23%;
+  }
+  .main {
+    width: 75%;
+  }
+  ul {
+    text-align: left;
+    margin-left: 20px;
+  }
+}
