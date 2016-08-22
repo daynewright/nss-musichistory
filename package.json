@@ -1,0 +1,26 @@
+{
+  "name": "nss-musichistory",
+  "version": "1.0.0",
+  "description": "This is the project that you will be working for your individual work throughout the entire front end course. Don't worry, you'll be building lots of other applications, but when you learn a new technique, library or language, you'll be cutting your teeth with it on Music History.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daynewright/nss-musichistory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daynewright/nss-musichistory/issues"
+  },
+  "homepage": "https://github.com/daynewright/nss-musichistory#readme",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-jshint": "^2.0.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
