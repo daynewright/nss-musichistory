@@ -69,7 +69,7 @@ var Music = (function(music){
           });
         return holder;
       }
-    })()
+    })();
 // END add selections to sidebar //
 
   var songHolder =$('.main').children()[0];
@@ -85,8 +85,8 @@ var Music = (function(music){
           </p>
         </div>`)
       );
-  }
+  };
 
 return music;
 
-})(Music || {})
+})(Music || {});

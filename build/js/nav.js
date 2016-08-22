@@ -7,7 +7,7 @@
     for (var i = 0; i < navLinks.length; i++) {
       $(navLinks[i]).click(clickedNavLink);
     }
-  }())
+  }());
 
   function clickedNavLink (evt) {
     var pages = $('.page');
@@ -31,4 +31,4 @@
     }
   }
 
-})()
+})();
