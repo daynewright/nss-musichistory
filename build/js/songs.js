@@ -1,39 +1,38 @@
-var Music = (function(music){
+var buildDOM = require('./buildDOM');
 
-    var songs = [];
 
-    // Load JSON data on load
-    music.loadSongs = function (url) {
-        return $.getJSON(url)
-            .then(function (JSONsongs) {
-              songs = songs.concat(JSONsongs);
-              return songs;
-            })
-            .then(function (JSONsongs) {
-              music.addSongsToDOM(JSONsongs);
-            });
-    };
+var songs = [];
 
-    music.loadSongs('json/songs1.json');
+// Load JSON data on load
+loadSongs = function (url) {
+    return $.getJSON(url)
+        .then(function (JSONsongs) {
+          songs = songs.concat(JSONsongs);
+          return songs;
+        })
+        .then(function (JSONsongs) {
+          buildDOM(JSONsongs);
+        });
+};
 
-    //methods on Music {}
-    music.getAllSongs = function(){
-      return songs;
-    };
+loadSongs('json/songs1.json');
 
-    music.addAnotherSong = function(name, artist, album){
-      songs.push({ "artist" : artist,
-                    "song"   : name,
-                    "album"  : album
-                  });
+//methods on Music {}
+getAllSongs = function(){
+  return songs;
+};
 
-      music.addSongsToDOM(music.getAllSongs());
+addAnotherSong = function(name, artist, album){
+  songs.push({ "artist" : artist,
+                "song"   : name,
+                "album"  : album
+              });
 
-      $('input[name="song-name"]').val('');
-      $('input[name="artist"]').val('');
-      $('input[name="album"]').val('');
-    };
+  buildDOM(songs);
 
-    return music;
+  $('input[name="song-name"]').val('');
+  $('input[name="artist"]').val('');
+  $('input[name="album"]').val('');
+};
 
-})(Music || {});
+module.exports = {loadSongs, getAllSongs, addAnotherSong};

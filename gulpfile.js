@@ -4,7 +4,7 @@ const gulp = require('gulp'),
       source = require('vinyl-source-stream'),
       browserify = require('browserify');
 
-const jsFiles = 'build/js/**/*.js';
+const jsFiles = 'build/js/*.js';
 
 /////////  ERROR CALLBACK   /////////
 function errorLog(err){
