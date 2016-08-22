@@ -56,7 +56,7 @@ var Music = (function(music){
           deleteSong(evt);
         }
         if(evt.target.id === 'more-songs'){
-          music.loadSongs('songs2.json');
+          music.loadSongs('json/songs2.json');
           evt.target.disabled = true;
         }
       }

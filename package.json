@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/daynewright/nss-musichistory#readme",
   "devDependencies": {
-    "browserify": "^13.1.0"
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
+    "gulp-reload": "0.0.4"
   }
 }

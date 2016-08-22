@@ -13,7 +13,7 @@ var Music = (function(music){
             });
     }
 
-    music.loadSongs('songs1.json');
+    music.loadSongs('json/songs1.json');
 
     //methods on Music {}
     music.getAllSongs = function(){
