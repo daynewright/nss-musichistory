@@ -1,6 +1,5 @@
 var buildDOM = require('./buildDOM');
 
-
 var songs = [];
 
 // Load JSON data on load

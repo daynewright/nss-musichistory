@@ -1,15 +1,13 @@
 
 
-showPage(location.hash);
-
-function addNavLinkEvents () {
+function addNavLinkEvents() {
   var navLinks = $('li');
   for (var i = 0; i < navLinks.length; i++) {
     $(navLinks[i]).click(clickedNavLink);
   }
 }
 
-function clickedNavLink (evt) {
+function clickedNavLink(evt) {
   var pages = $('.page');
 
   for (var i = 0; i < pages.length; i++) {
@@ -19,7 +17,7 @@ function clickedNavLink (evt) {
   showPage(evt.target.hash);
 }
 
-function showPage (id) {
+function showPage(id) {
   if (id) {
     $(id).removeClass('hidden');
     $(`a[href="${id}"]`).parent().html('Add Music');
@@ -31,4 +29,4 @@ function showPage (id) {
   }
 }
 
-module.exports = addNavLinkEvents;
+module.exports = {showPage, addNavLinkEvents};
