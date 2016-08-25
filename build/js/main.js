@@ -2,6 +2,7 @@ var nav = require('./nav.js');
 var allSongs = require('./songs');
 var buildDOM = require('./buildDOM');
 
+
 nav.addNavLinkEvents();
 nav.showPage(location.hash);
 
