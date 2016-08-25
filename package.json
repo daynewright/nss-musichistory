@@ -21,6 +21,11 @@
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-jshint": "^2.0.1",
+    "handlebars": "^4.0.5",
+    "hbsfy": "^2.7.0",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "browserify": {
+    "transform": ["hbsfy"]
   }
 }
