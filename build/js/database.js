@@ -61,3 +61,5 @@ function saveEdit(songObj, songId){
     });
   });
 }
+
+module.exports = {getSongs, deleteSong, addSong, getSong, saveEdit};
