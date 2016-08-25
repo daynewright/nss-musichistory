@@ -83,6 +83,7 @@ button, select {
   border: 2px solid #ebebeb;
   cursor: pointer;
   display: inline-block;
+  outline: none;
 
 }
 
@@ -106,7 +107,7 @@ button:hover {
 
 .song button {
   padding: 5px 5px;
-  margin-left: 20px;
+  margin-left: 10px;
   font-size: .5em;
 }
 
@@ -168,6 +169,10 @@ form {
 
 button:disabled {
   cursor: not-allowed;
+}
+
+#edit-btn:hover{
+  background-color: #83c592;
 }
 
 /* Large screen modifications */
